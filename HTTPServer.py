@@ -217,7 +217,7 @@ while True:
         try:
             connection_socket.close()
         except:
-            this = "dumb"
+            this = "error"
         break
 
     except OSError as e:
@@ -225,14 +225,14 @@ while True:
         try:
             connection_socket.close()
         except:
-            this = "dumb"
+            this = "error"
         break
 
 try:
     server_socket.close()
 except:
-    this = "dumb"
+    this = "error"
 try:
     connection_socket.close()
 except:
-    this = "dumb"
+    this = "error"
